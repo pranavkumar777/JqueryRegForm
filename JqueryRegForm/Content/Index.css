@@ -1,0 +1,12 @@
+﻿body {
+}
+textarea{
+    resize : none
+}
+td{
+    width : 120px;
+    height: 80px;
+}
+.jumbotron{
+    width: 20cm;
+}

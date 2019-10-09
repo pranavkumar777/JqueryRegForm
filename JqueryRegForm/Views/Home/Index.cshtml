@@ -1,0 +1,119 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+<head>
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+    <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+   
+     <link href="~/Content/Index.css" rel="stylesheet" />
+    <script src="~/scripts/index.js"></script>
+
+
+</head>
+
+<h3>Registration Form &nbsp; &nbsp; <input type="button" id="changecolor" value="Change Color" /> </h3>
+<form id="reg-form">
+    <div class="jumbotron">
+        <div id="salutation"></div>
+        <table>
+            <tr>
+               <td>First Name</td>
+                <td><input type="text" id="firstname" required/></td>
+            </tr>
+            <tr>
+                <td>Last Name</td>
+                <td><input type="text" id="lastname" required></td>
+            </tr>
+         
+            <tr>
+                <td>Age</td>
+                <td>
+                    <select name="Age" id="age" required>
+                        <option value="" selected disabled hidden>select an option</option>
+                        
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td>
+                    <select name="Gender" id="gender" required>
+                        <option value="" selected disabled hidden>select an option</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                    </select>
+                </td>
+            </tr>
+          
+            <tr>
+                <td>Address1:</td>
+                <td><input type="text"  id="address1" required /></td>
+            </tr>
+            <tr>
+                <td>Address2:</td>
+                <td><input type="text" id="address2"/></td>
+            </tr>
+            <tr>
+                <td>
+                    Date of Joining
+                </td>
+                <td>
+                    <input type="text" id="date" required/>
+                </td>
+            </tr>
+            <tr>
+                <td>Country:</td>
+                <td><select name="Country" id="country" required>
+                     <option value="" selected disabled hidden>select an option</option>
+                    </select></td>
+            </tr>
+            <tr>
+                <td>State:</td>
+                <td>
+                    <select name="State" id="state" required>
+                        <option value="" selected disabled hidden>select an option</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>City</td>
+                <td>
+                    <select name="City" id="city" required>
+                        <option value="" selected disabled hidden>select an option</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Mobile No:</td>
+                <td><input type="number" id="mobilenumber" value="" required /></td>
+            </tr>
+            <tr>
+                <td>Relocation:</td>
+                <td>
+                    
+                        <input type="radio" id="relocation" name="relocation" value="Yes" required> Yes
+                        <input type="radio" name="relocation" value="No">No
+                   
+                </td>
+            </tr>
+            <tr>
+                <td>Comments</td>
+                <td><textarea rows="3" cols="25" id="comments"></textarea></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="submit" value="submit" /> &nbsp; &nbsp;
+
+                    <input type="reset" value="clear" />
+                </td>
+            </tr>
+
+        </table>
+
+    </div>
+</form>
